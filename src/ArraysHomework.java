@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
-public class Main {
+public class ArraysHomework {
+
     public static void main(String[] args) {
         int summ = 0;
         int summ2 = 0;
@@ -59,4 +60,7 @@ public class Main {
     }
 
 
-    }
+}
+
+
+
