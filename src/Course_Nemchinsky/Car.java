@@ -9,6 +9,8 @@ public class Car {
     int price;
     int wight;
     Colors color;
+    private int distance = 0;
+    protected int distanceOnService = 0;
 
         // constructor
     public Car(String carName, int yearOfProduction, int price, int wight, Colors color) {
@@ -18,17 +20,44 @@ public class Car {
         this.wight = wight;
         this.color = color;
     }
-
-        @Override
-        public String toString() {
-            return "Car{" +
-                    "carName='" + carName + '\'' +
-                    ", yearOfProduction=" + yearOfProduction +
-                    ", price=" + price +
-                    ", wight=" + wight +
-                    ", color='" + color + '\'' +
-                    '}';
+    public void addDistance (int addInitialDistance) {
+        if (addInitialDistance > 0) {
+            distance += addInitialDistance;
+            distanceOnService += addInitialDistance;
+        } else {
+            System.out.println("Distance cannot be less than zero");
         }
+    }
+    public void addDistance (double addInitialDistance) {
+        if (addInitialDistance > 0) {
+            distance += addInitialDistance;
+            distanceOnService += addInitialDistance;
+        } else {
+            System.out.println("Distance cannot be less than zero");
+        }
+    }
+    public boolean readyOnService () {
+        return distanceOnService > 10000;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+    public  int getDistanceOnService() {
+        return  distanceOnService;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carName='" + carName + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
+                ", price=" + price +
+                ", wight=" + wight +
+                ", color=" + color +
+                ", distance=" + distance +
+                '}';
+    }
 
     @Override
     public boolean equals(Object o) {
