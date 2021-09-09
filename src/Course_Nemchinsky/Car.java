@@ -3,7 +3,7 @@ package Course_Nemchinsky;
 import java.util.Objects;
 
 //class
-public class Car {
+public abstract class Car implements Services {
     String carName;
     int yearOfProduction;
     int price;
@@ -36,9 +36,7 @@ public class Car {
             System.out.println("Distance cannot be less than zero");
         }
     }
-    public boolean readyOnService () {
-        return distanceOnService > 10000;
-    }
+    public abstract boolean readyOnService ();
 
     public int getDistance() {
         return distance;

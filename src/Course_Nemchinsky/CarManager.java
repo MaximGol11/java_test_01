@@ -3,8 +3,8 @@ package Course_Nemchinsky;
 public class CarManager {
      public static void main(String[] args) {
 
-     PassangerCar toyota = new PassangerCar("Toyota Camry", 2007, 15000, 1500, Colors.RED );
-     Pickup ford = new Pickup("Ford F150", 2010, 20000, 2200, Colors.WHITE);
+     Car toyota = new PassangerCar("Toyota Camry", 2007, 15000, 1500, Colors.RED );
+     Car ford = new Pickup("Ford F150", 2010, 20000, 2200, Colors.WHITE);
 
      toyota.addDistance(1000);
      toyota.addDistance(1000.5);
