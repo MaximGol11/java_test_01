@@ -1,3 +1,5 @@
+package Qa_AutomationCourse.Homework_1;
+
 public class Summa {
     public double number_1;
     public double number_2;

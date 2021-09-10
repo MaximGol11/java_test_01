@@ -1,3 +1,5 @@
+package Qa_AutomationCourse.Homework_1;
+
 public class StringHomework {
     public static void main(String[] args) {
 

@@ -36,7 +36,6 @@ public abstract class Car implements Services {
             System.out.println("Distance cannot be less than zero");
         }
     }
-    public abstract boolean readyOnService ();
 
     public int getDistance() {
         return distance;
