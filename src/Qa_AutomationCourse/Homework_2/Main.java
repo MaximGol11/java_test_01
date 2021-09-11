@@ -5,14 +5,19 @@ public class Main {
 
         Person alex = new Person("Alex", "Petrov", 25, 0);
 
-        Person anna = new Person("Anna", "Ivanova", 30, 1);
+        Person olga = new Person("Olga", "Ivanova", 30, 1);
 
         Employee anrew = new Employee("Andrew", "Sidorov", 24, 0, 200000);
         Employee sergey = new Employee("Sergey", "Vasin", 35, 0, 250000);
+        Employee anna = new Employee("Anna", "Druzhinina", 25, 1, 450000);
 
-        System.out.println(anna.getName());
+        Salary sum = new Salary();
+
+        System.out.println(olga.getName());
         System.out.println(alex.getName());
-        System.out.println(anrew.isSameName("Andrew"));
+        System.out.println(anrew.isSameName(anrew, "Andrew"));
+        System.out.println(sum.getSum(new Employee[]{anrew, sergey, anna}));
+
 
 
 

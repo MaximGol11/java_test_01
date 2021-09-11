@@ -16,7 +16,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public boolean isSameName (String employee_name ) {
+    public boolean isSameName(Employee anrew, String employee_name) {
         return (employee_name.equals(first_name));
     }
 
