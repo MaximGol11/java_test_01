@@ -8,8 +8,8 @@ public class Employee {
         person = new Person(name, age, sex);
         this.salary = salary;
     }
-    boolean isSameName(String employeeName) {
-        return (employeeName.equals(person.name));
+    boolean isSameName(Employee employeeName) {
+        return person.name.equals(employeeName.person.name);
     }
 
 }

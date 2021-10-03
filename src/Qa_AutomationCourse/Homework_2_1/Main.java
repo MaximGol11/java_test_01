@@ -12,8 +12,8 @@ public class Main {
        // employees_salary_sum.getSum(employees);
 
 
-        System.out.println(employee_1.isSameName("Anton"));
-        System.out.println(employee_2.isSameName("Masha"));
+        System.out.println(employee_1.isSameName(employee_1));
+        System.out.println(employee_2.isSameName(employee_2));
         System.out.println(employees_salary_sum.getSum(employees));
 
     }

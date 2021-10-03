@@ -4,8 +4,7 @@ public class Salary {
     int getSum(Employee[] employeeArray) {
         int sum = 0;
         for (int i = 0; i < employeeArray.length; i++) {
-            Employee employee = employeeArray[i];
-            sum += employee.salary;
+            sum += employeeArray[i].salary;
         }
         return sum;
     }
